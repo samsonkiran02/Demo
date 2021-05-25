@@ -1,0 +1,204 @@
+				/* copyright */
+				/* Author: Samson Kiran */
+				/* for chat to me */
+				
+				
+html, body {
+     height: 100%;
+     width: 100%;
+     margin: 0;
+     padding: 0;
+     background-color: black;
+}
+
+      /* for audio */
+audio {
+     position: fixed;
+     display: none;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     width: 100%;
+     z-index: 5;
+}
+
+      /* for without copy */
+#forwithoutcopy {
+     -webkit-user-select: none;
+     -webkit-touch-callout: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+}
+
+     /* for full page patasu */
+canvas {
+     cursor: crosshair;
+     display: block;
+     left: 0;
+     position: absolute;
+     top: 0;
+     bottom:0;
+     right:0;
+     z-index: 20;
+}
+
+     /* for click on screen text */
+h1{
+     color:whitesmoke;
+     position:fixed;
+     top:0px;
+     margin:auto;
+     left:0; 
+     right:0;
+     font-size:10px;
+}
+
+     /* for click to open */
+#forclicktoopen {
+     width: 100%;
+     height: 0%;
+     position: fixed;
+     z-index:1000;
+}
+
+     /* for power by text */
+h3{
+     color:whitesmoke;
+     position:fixed;
+     bottom:20px;
+     margin:auto;
+     left:0; 
+     right:0;
+     font-size:18px;
+}
+
+     /* for samson kiran hypertext */
+a{
+     color:red;
+     font-size:20px;
+     text-decoration: none;
+}
+
+     /* for circle and gift box {starts} */
+@keyframes spin {
+     100% {
+          transform: rotate(360deg);
+     }
+}
+
+     /* for circle and gift box */
+.circle,h2 {
+     width: 214px;
+     height: 214px;
+     font-size:450px;
+     border-radius: 214px;
+     position: fixed;
+     top: -50px;
+     right: -40px;
+     margin:auto;
+     box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+     transform: scale(.3,.3);
+}
+
+     /* for gift box text */
+h2 {
+     width:350px;
+     height:215px;
+}
+
+     /* for circle */
+.circle:after {
+     content: "";
+     display: block;
+     border: 7px dashed red;
+     width: 200px;
+     height: 200px;
+     border-radius: 250px;
+     animation: spin 8s linear infinite;
+}
+
+     /* for circle position */
+@media screen and (max-width: 720px) {
+     .circle{
+          bottom:0px;left:-30px;
+     }
+}
+     /* for circle and gift box {end} */
+
+     /* for after click the circle - Popup box and close button */
+     
+     /* for Popup box and close button {starts} */
+     /* for Popup box - hidden by default */
+.forpopup {
+     display: none;
+     position:fixed; 
+     bottom: 10px;
+     right: 0px;
+     top:0px;
+     left:0px;
+     border: 1px solid red;
+     z-index: 9;
+     background-color: black;
+     border-radius:0px 0px 0px 0px;
+}
+
+     /* for Popup box closing button */
+.closepopupbox {
+     background-color:red;
+     position: fixed;
+     bottom: 5%;
+     left: 45%;
+     width: 45px;
+     height: 45px;
+     font-size: 35px;
+     border-radius: 45px;
+     text-align:center;
+     border-color:red;
+}
+     /* for Popup box and close button {end} */
+     
+button {
+    -webkit-box-shadow: 0px 0px 10px 3px red;
+    -moz-box-shadow: 0px 0px 10px 3px red;
+    box-shadow: 0px 0px 10px 3px red;
+    border: none;
+}
+
+     /* for social media icon size */
+.icon {
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      margin-left: 12px;
+      margin-right: 12px;
+}
+
+     /* for social media icon hover */
+.icon:hover {
+-webkit-box-shadow: 0px 0px 10px 3px white;
+-moz-box-shadow: 0px 0px 10px 3px white;
+box-shadow: 0px 0px 10px 3px white;
+}
+
+     /* for text/input */
+input {  
+      color:red;
+      background-color: #340411;
+      border-color:red;
+      border-radius:8px;
+      width:150px;
+      height:25px;
+      margin-left: 8px;
+      font-size: 22px;
+      text-align: center;
+ }
+ 
+     /* for text/input hover */
+input:hover {
+    -webkit-box-shadow: 0px 0px 10px 5px red;
+    -moz-box-shadow: 0px 0px 10px 5px red;
+    box-shadow: 0px 0px 10px 5px red;
+}
