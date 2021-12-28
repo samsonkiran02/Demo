@@ -2,7 +2,7 @@
     <html lang="en">
         <head>
     
-        <link rel="stylesheet" href="https://onlinecompass.app/css/style.css">
+        <link rel="stylesheet" href="https://samsonkiran02.github.io/Demo/Coding/Going/compass/id-01/style.css">
         
 		<script data-ad-client="ca-pub-2568807673303223" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		
@@ -2504,7 +2504,7 @@
 function showSensorRequest(){sensorPrompt.classList.toggle("is-visible")}var isAbsolute=!1;function handleOrientation(e){var t=e.alpha;1==e.absolute?(rotate(t),isAbsolute=!0,sensorPrompt.classList.remove("is-visible")):window.removeEventListener("deviceorientation",handleOrientation)}function rotate(e){var t=Math.round(10*(360-e))/10;document.getElementById("angle").innerHTML=disha(e)+"  "+t+"&deg;";var n=document.getElementById("svgClock");n.style.webkitTransform="rotate("+e+"deg)",n.style.mozTransform="rotate("+e+"deg)",n.style.msTransform="rotate("+e+"deg)",n.style.oTransform="rotate("+e+"deg)",n.style.transform="rotate("+e+"deg)"}function disha(e){return e>=22.5&&e<67.5?"NW":e>=67.5&&e<112.5?"W":e>=112.5&&e<157.5?"SW":e>=157.5&&e<202.5?"S":e>=202.5&&e<247.5?"SE":e>=247.5&&e<292.5?"E":e>=292.5&&e<337.5?"NE":"N"}navigator.permissions.query({name:"magnetometer"}).then(e=>{if("denied"!==e.state){var t=new Magnetometer({frequency:10});0==isAbsolute?t.addEventListener("reading",e=>{let{x:n,y:a,z:r}=t;var o;o=90-(o=Math.atan2(a,n)>=0?Math.atan2(a,n)*(180/Math.PI):(Math.atan2(a,n)+2*Math.PI)*(180/Math.PI)),(o=Math.abs(270+o)+90)>360&&(o=Math.abs(360-o)),rotate(o)}):(t.removeEventListener("reading"),t.stop()),t.start()}}).catch(e=>{showSensorRequest()}),window.addEventListener("deviceorientation",handleOrientation),"serviceWorker"in navigator&&navigator.serviceWorker.register("service-worker.js",{scope:"."}).then(function(e){}).catch(function(e){});
 </script>
 
-<script src="https://onlinecompass.app/js/ui.js"></script>
+<script src="https://samsonkiran02.github.io/Demo/Coding/Going/compass/id-01/script.js"></script>
 <footer class="site-footer">
         <br>
       <div class="container">
