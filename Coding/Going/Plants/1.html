@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Plants Gallery</title>
+  
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #111;
+}
+
+.container {
+  padding: 4rem 8rem;
+  columns: 4 300px;
+  column-gap: 2rem;
+}
+.container .card img {
+  margin: 0 1rem 2rem 0;
+  display: block;
+  background: #333;
+  border-radius: 1rem;
+  border: none;
+  overflow: hidden;
+  min-height: 200px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    padding: 2rem;
+  }
+}
+</style>
+
+
+
+<lik rel='stylesheet' href='https://fonts.googleapis.com/css?family=Acme'>
+<style>
+ @import url('https://fonts.googleapis.com/css?family=Lobster');
+.loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #03FF00;
+  z-index: 99;
+}
+.loading:after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  border: 9px solid #f2f2f2;
+  border-top: 9px dotted #f2f2f2;
+  border-bottom: 9px dotted #f2f2f2;
+  border-radius: 100%;
+  animation: loading 2s infinite;
+}
+.loading:before {
+  font-family: 'Lobster', cursive;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  color: white;
+  content: "Loading...";
+  position: absolute;
+  top: 55%;
+  text-align: center;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+}
+</style>
+
+<style>
+				.card {
+  
+  
+  
+position:relative;
+  
+  
+  
+
+}
+				
+				.card:hover .img-text {
+  
+  visibility: visible;
+  opacity: 1;
+  
+}
+
+				
+				.img-text {
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+visibility: hidden;
+opacity: 0;
+bottom: -0px;
+position: absolute;
+				 width: 100%;
+  height: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.65);  
+  font-size:50px;
+  
+}
+</style>
+
+</head>
+<body>
+				
+				<div class="loading" delay-hide="100"></div>
+				
+  <div class="container">
+  				
+  			
+  <div class="card">
+  				
+  				<img src="https://samsonkiran02.github.io/src/img/plants/0A01.jpg" alt="0A01 | 02 February 2021 | 01:31 PM"/>
+  				<div class="img-text" id="0A01">0A01<br>02 February 2021<br>01:31 PM</div>
+  				</div>
+  <div class="card">
+  				<div class="img-text">0A02<br>02 February 2021<br>01:31 PM</div>
+  				<img src="https://samsonkiran02.github.io/src/img/plants/0A02.jpg" alt="0A02 | 02 February 2021 | 01:31 PM"/></div>
+  <div class="card"><img src="https://samsonkiran02.github.io/src/img/plants/0A03.jpg" alt="0A03 | 15 April 2021 | 11:04 AM"/></div>
+  <div class="card"><img src="https://samsonkiran02.github.io/src/img/plants/0A04.jpg" alt="0A04 | 15 April 2021 | 11:12 AM"/></div>
+  <div class="card"><img src="https://samsonkiran02.github.io/src/img/plants/0A05.jpg" alt="0A05 | 15 April 2021 | 11:50 AM"/></div>
+  <div class="card"><img src="https://samsonkiran02.github.io/src/img/plants/0A06.jpg" alt="0A06 | 20 April 2021 | 04:44 PM"/></div>
+  <div class="card"><img src="https://samsonkiran02.github.io/src/img/plants/0A07.jpg" alt="0A07 | 21 April 2021 | 07:45 PM"/></div>
+  <div class="card"><img src="https://samsonkiran02.github.io/src/img/plants/0A08.jpg" alt="0A08 | 24 April 2021 | 01:23 PM"/></div>
+  <div class="card"><img src="https://samsonkiran02.github.io/src/img/plants/0A09.jpg" /></div>
+  <div class="card"><img src="https://samsonkiran02.github.io/src/img/plants/0A10.jpg" /></div>
+   <div class="card"><img class="lazy" data-src="https://samsonkiran02.github.io/src/img/plants/0A11.jpg" /></div>
+  <div class="card"><img class="lazy" data-src="https://samsonkiran02.github.io/src/img/plants/0A12.jpg" /></div>
+  <div class="card"><img class="lazy" data-src="https://samsonkiran02.github.io/src/img/plants/0A13.jpg" /></div>
+  <div class="card"><img class="lazy" data-src="https://samsonkiran02.github.io/src/img/plants/0A14.jpg" /></div>
+    <div class="card"><img class="lazy" id="0A05" data-src="https://samsonkiran02.github.io/src/img/plants/0A15.jpg" /></div>
+  <div class="card"><img class="lazy" data-src="https://samsonkiran02.github.io/src/img/plants/0A16.jpg" /></div>
+  <div class="card"><img class="lazy" data-src="https://samsonkiran02.github.io/src/img/plants/0A17.jpg" /></div>
+  <div class="card"><img class="lazy" data-src="https://samsonkiran02.github.io/src/img/plants/0A18.jpg" /></div>
+  <div class="card"><img class="lazy" data-src="https://samsonkiran02.github.io/src/img/plants/0A19.jpg" /></div>
+  <div class="card"><img class="lazy" data-src="https://samsonkiran02.github.io/src/img/plants/0A20.jpg" /></div>
+  
+  
+  				
+  				
+  
+  </div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages;    
+
+  if ("IntersectionObserver" in window) {
+    lazyloadImages = document.querySelectorAll(".lazy");
+    var imageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var image = entry.target;
+          image.src = image.dataset.src;
+          image.classList.remove("lazy");
+          imageObserver.unobserve(image);
+        }
+      });
+    });
+
+    lazyloadImages.forEach(function(image) {
+      imageObserver.observe(image);
+    });
+  } else {  
+    var lazyloadThrottleTimeout;
+    lazyloadImages = document.querySelectorAll(".lazy");
+    
+    function lazyload () {
+      if(lazyloadThrottleTimeout) {
+        clearTimeout(lazyloadThrottleTimeout);
+      }    
+
+      lazyloadThrottleTimeout = setTimeout(function() {
+        var scrollTop = window.pageYOffset;
+        lazyloadImages.forEach(function(img) {
+            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+              img.src = img.dataset.src;
+              img.classList.remove('lazy');
+            }
+        });
+        if(lazyloadImages.length == 0) { 
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
+        }
+      }, 20);
+    }
+
+    document.addEventListener("scroll", lazyload);
+    window.addEventListener("resize", lazyload);
+    window.addEventListener("orientationChange", lazyload);
+  }
+})
+</script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+      <script>
+$(document).ready(function(){
+  var loading = $(".loading");
+  loading.delay(loading.attr("delay-hide")).slideUp();
+});
+    </script>
+
+</body>
+</html>
